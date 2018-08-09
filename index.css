@@ -33,6 +33,8 @@ main section{
 }
 main section:first-child{
     display: block;
+    height: calc(100vh - 45px);
+    overflow: scroll;
 }
 main #search {
     height: calc(100% - 45px);

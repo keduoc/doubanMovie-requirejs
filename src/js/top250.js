@@ -17,6 +17,7 @@ define(['jquery','helper'],function($,Helper){
                 if(!_this.isFinish && Helper.isToEnd(_this.$container, _this.$content)){
                     _this.start()
                 }
+                console.log('scroll')
             })
         },
         start: function(){
@@ -32,7 +33,7 @@ define(['jquery','helper'],function($,Helper){
             _this.isLoading = true
             _this.$container.find('.loading').show()
             $.ajax({
-                url: 'http://api.douban.com/v2/movie/top250',
+                url: 'https://api.douban.com/v2/movie/top250',
                 data: {
                     start: _this.index||0
                 },

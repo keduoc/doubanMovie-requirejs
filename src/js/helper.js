@@ -6,19 +6,19 @@ define(['jquery'], function($){
 
         createNode: function(movie){
             var template = `<div class="item">
-      <a href="#">
-      <div class="cover">
-      <img src="" alt="">
-          </div>
-      <div class="detail">
-      <h2></h2>
-      <div class="extra"><span class="score"></span>分 / <span class="collect"></span>收藏</div>
-      <div class="extra"><span class="year"></span> / <span class="type"></span></div>
-      <div class="extra">导演: <span class="director"></span></div>
-      <div class="extra">主演: <span class="actor"></span></div>
-    </div>
-    </a>
-    </div>`
+                              <a href="#">
+                              <div class="cover">
+                              <img src="" alt="">
+                                  </div>
+                              <div class="detail">
+                              <h2></h2>
+                              <div class="extra"><span class="score"></span>分 / <span class="collect"></span>收藏</div>
+                              <div class="extra"><span class="year"></span> / <span class="type"></span></div>
+                              <div class="extra">导演: <span class="director"></span></div>
+                              <div class="extra">主演: <span class="actor"></span></div>
+                            </div>
+                            </a>
+                            </div>`
             var $node = $(template)
             $node.find('a').attr('href', movie.alt)
             $node.find('.cover img')
@@ -47,5 +47,4 @@ define(['jquery'], function($){
     }
     console.log('helper')
     return Helper
-
 })

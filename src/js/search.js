@@ -1,4 +1,4 @@
-define(['jquery'], function($){
+define(['jquery','helper'], function($,Helper){
 
     var SearchPage = {
         init: function(){
@@ -21,7 +21,7 @@ define(['jquery'], function($){
             var _this = this
             _this.$container.find('.loading').show()
             $.ajax({
-                url: 'http://api.douban.com/v2/movie/search',
+                url: 'https://api.douban.com/v2/movie/search',
                 data: {
                     q: keyword
                 },
