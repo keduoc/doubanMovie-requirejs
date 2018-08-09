@@ -110,7 +110,7 @@ footer{
     font-size: 16px;
     height: 45px;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     display: flex;
     border-top: 1px solid #ccc;
